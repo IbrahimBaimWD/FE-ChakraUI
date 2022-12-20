@@ -21,7 +21,7 @@ export default function About() {
             letterSpacing="wide"
             color="teal.600"
           >
-            Marketing2222
+            Marketing2222adada
           </Text>
           <Link
             mt={1}
