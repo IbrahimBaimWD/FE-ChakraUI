@@ -38,7 +38,7 @@ const MenuIcon = () => (
   </svg>
 );
 
-const Header = (props) => {
+const Header = ({ props, user }) => {
   const [show, setShow] = React.useState(false);
   const toggleMenu = () => setShow(!show);
 

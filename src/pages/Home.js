@@ -12,8 +12,12 @@ import {
   TableContainer,
 } from "@chakra-ui/react";
 import LandingLayout from "../components/layouts/LandingLayout";
+import { Navigate } from "react-router-dom";
 
-export default function Home() {
+export default function Home({ user }) {
+  if (!user) {
+    return <Navigate to="/" replace />;
+  }
   return (
     <LandingLayout>
       <Box w="100%" border={1} p={2}>
